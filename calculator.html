@@ -8,6 +8,12 @@
             var num = document.getElementById("n1");
             num.value = Math.pow(num.value,3);
          }
+
+         // returns sin(x) in degrees
+         function sin() {
+            var num = document.getElementById("n1");
+            num.value = Math.sin(num.value * Math.PI / 180 );
+         }
       </script>
    </head>
    <body>
@@ -18,5 +24,6 @@
       </p>
 
       <button onclick="cube()">x³</button>
+      <button onclick="sin()">sin(x)</button>
    </body>
 </html>
